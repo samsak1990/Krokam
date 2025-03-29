@@ -5,6 +5,7 @@ import BoxIntroduction from './modules/BoxIntroduction/BoxIntroduction';
 import BoxProjects from './modules/BoxProjects/BoxProjects';
 import BoxVideo from './modules/BoxVideo/BoxVideo';
 import BoxContacts from './modules/BoxContacts/BoxContacts';
+import BoxFooter from './modules/BoxFooter/BoxFooter';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
        <BoxVideo></BoxVideo>
        <BoxProjects></BoxProjects>
        <BoxContacts></BoxContacts>
+       <BoxFooter></BoxFooter>
     </div>
   );
 }

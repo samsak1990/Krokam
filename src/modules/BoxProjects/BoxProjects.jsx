@@ -14,7 +14,6 @@ const BoxProjects = ()=>{
                 <div className={style.projectsGrid}>
                     {
                         projectsList.map((project, index)=>{
-                            console.log(project)
                             return(
                                 <Project data={project} key={index}/>
                             )

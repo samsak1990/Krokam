@@ -1,25 +1,58 @@
 @import '../../App.module.scss';
 
 .formModule{
-   border: 1px solid black;
-   text-align: center;
-   label{
-    display: block;
-   }
+    border: 1px solid black;
+    text-align: left;
+   
+
+    input[type='text'],
+    input[type='email']{
+        position: relative;
+        border:1px solid #000;
+        border-radius: 10px;
+        height: 41px;
+        flex-grow: 1;
+        background: initial;
+        padding: 5px 10px;
+        font-size: 16px;
+        &:focus{
+            background-color: #fff;
+        }
+    }
+    label{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .btnSub{
+        display: block;
+        width: 147px;
+        height: 41px;
+        background-color:$bg-orange;
+        border-radius: 10px;
+        text-decoration: underline;
+        font-size: 18px;
+        color:#fff;
+        outline: none;
+        border: none;
+        margin: 0 auto;
+        margin-top: 45px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        &[disabled]{
+            background-color: rgb(90, 90, 90);
+        }
+    }
+
+    .row:not(:last-child){
+        display: flex;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
 }
 
-.btnSub{
-    display: block;
-    width: 147px;
-    height: 41px;
-    background-color:$bg-orange;
-    border-radius: 10px;
-    text-decoration: underline;
-    font-size: 18px;
-    color:#fff;
-    outline: none;
-    border: none;
-    margin: 0 auto;
-    margin-top: 45px;
-    cursor: pointer;
-}
+
+
+
+

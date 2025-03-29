@@ -1,0 +1,46 @@
+.logoMini{
+    width: 167px;
+    height: 35px;
+    margin-bottom: 60px;
+}
+
+.footerBoxes{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.linkYouTube{
+    display: block;
+    width: 21px;
+    height: 15px;
+    background: url('../../../public/images/Vector.png') no-repeat center/contain;
+}
+
+.footerBoxes_left{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.mailLink{
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.footerBoxes_right{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+        width: 470px;
+        justify-content: space-between;
+        li{ 
+            width: 40%;
+            &:nth-child(2n){
+                text-align: right;
+            }   
+        }   
+
+    }
+}
