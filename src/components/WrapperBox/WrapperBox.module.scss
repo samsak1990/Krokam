@@ -1,3 +1,4 @@
+
 .wrapperBox{
     border: 1px solid red;
     position: relative;
@@ -5,4 +6,10 @@
     max-width: 1920px;
     min-height: 700px;
     padding: 40px 0;
+}
+
+.contentCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

@@ -1,0 +1,15 @@
+@mixin header2Global{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.black{
+    @include header2Global();
+    color: black;
+}
+
+.white{
+    @include header2Global();
+    color: white;
+}

@@ -1,0 +1,16 @@
+@import '../../App.module.scss';
+
+.button{
+    display: block;
+    width: 147px;
+    height: 41px;
+    background-color:$bg-orange;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-size: 18px;
+    color:#fff;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+}
