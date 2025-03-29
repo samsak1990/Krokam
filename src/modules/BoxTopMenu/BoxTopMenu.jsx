@@ -13,7 +13,7 @@ const BoxTopMenu = () => {
                         </li>)
                 })}
             </ul>
-            <span className={style.language} title="Изменить язык страницы">
+            <span className={style.language} title="Change language">
             </span>
         </nav>
     )

@@ -7,7 +7,7 @@ import Button from "../../views/Button/Button";
 
 const BoxAbout = () =>{
     return (
-        <WrapperBox classExtra={style.background_blue} center={true}>
+        <WrapperBox blueBg={true} center={true}>
             <WrapperContent >
                 <H2 color='white'>About the project</H2>
                 <div className={style.textAbout}>

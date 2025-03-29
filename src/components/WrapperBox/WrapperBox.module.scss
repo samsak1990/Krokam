@@ -1,15 +1,19 @@
-
+@import '../../App.module.scss';
 .wrapperBox{
     border: 1px solid red;
     position: relative;
     width: 100%;
     max-width: 1920px;
     min-height: 700px;
-    padding: 40px 0;
+    padding: 95px 0;
 }
 
 .contentCenter{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.background_blue{
+    background-color: $bg-blue;
 }
