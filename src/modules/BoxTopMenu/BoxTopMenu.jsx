@@ -1,14 +1,20 @@
 import React from "react";
+import style from './BoxTopMenu.module.scss'
 import { menuList } from "./MenuList";
 
-const BoxTopMenu = ()=>{
+const BoxTopMenu = () => {
     return (
-        <nav className="navigation">
-            <ul className="boxNav">
-                {menuList.map(item=>{
-                    `<li className="boxNav_item"><a href="" className="item_link">${item}</a></li>`
+        <nav className={style.navigation}>
+            <ul className={style.listNav}>
+                {menuList.map((item, index)=>{
+                    return (
+                        <li className={style.listNav_item} key={index}>
+                            <a href="#" className={style.item_link}>{item}</a>
+                        </li>)
                 })}
             </ul>
+            <span className={style.language} title="Изменить язык страницы">
+            </span>
         </nav>
     )
 }

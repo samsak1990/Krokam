@@ -2,3 +2,19 @@
     background: url('../../../public/images/intro/figure.png') no-repeat left/contain,
     url('../../../public/images/intro/city.jpg') no-repeat right/contain;
 }
+
+.box_logo{
+    width: 338px;
+    height: 69px;
+    background: url('../../../public/images/intro/logo.png') no-repeat center/contain;
+    margin-bottom: 72px;
+}
+
+.box_heading{
+    width: 648px;
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../App.module.scss';
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 20px;
+    margin-bottom: 108px;
+}
+
+.listNav{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+.listNav_item{
+
+}
+
+.item_link{
+    font-size: 20px;
+    line-height: 24px;
+    transition: color 0.3s ease-in-out;
+    &:hover{
+        color: $bg-orange;
+    }
+}
+
+.language{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 75px;
+    background: url('../../../public/images/intro/earth.png') no-repeat center/cover ;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background: url('../../../public/images/intro/earth-yellow.png') no-repeat center/cover ;
+    }
+}
