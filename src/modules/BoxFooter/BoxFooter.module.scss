@@ -39,7 +39,10 @@
             width: 40%;
             &:nth-child(2n){
                 text-align: right;
-            }   
+            } 
+            a:hover{
+                text-decoration: underline;
+            }  
         }   
 
     }

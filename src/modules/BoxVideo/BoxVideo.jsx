@@ -7,14 +7,14 @@ const BoxVideo = ()=>{
     return(
         <WrapperBox center={true}>
             <WrapperContent>
-                <iframe 
+                {/* <iframe 
                 className={style.videoBox} 
                 src="https://www.youtube.com/embed/Azb6KS38RCI?si=dv9IvTbWrBFgABmi" 
                 title="krokam - community manual and motivation to engage" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> */}
             </WrapperContent>
         </WrapperBox>
     )

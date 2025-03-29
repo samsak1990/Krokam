@@ -17,7 +17,6 @@ const Form = ()=>{
 
     const handleSubmit = (e)=>{
         e.preventDefault()
-        console.log(dataForm)
         setDataForm(initData)
     }
 
@@ -26,6 +25,7 @@ const Form = ()=>{
         setDataForm((prevData)=>({
             ...prevData, 
             [name]: type === 'checkbox' ? checked : value}))
+
     }
 
     return(
@@ -41,17 +41,18 @@ const Form = ()=>{
                 </div>
             </div>
             <div className={style.row}>
-                <label htmlFor="mess">Message</label>
-                <input type="text" name='mess' onChange={handleChange} value={dataForm.mess}/>
+                <div>
+                    <label htmlFor="mess">Message</label>
+                    <input type="text" name='mess' onChange={handleChange} value={dataForm.mess}/>
+                </div>
             </div>
-            <label htmlFor="robot" className={style.checkboxRobot}>
-                <input type="checkbox" name="isChecked" 
-                onChange={handleChange} checked={dataForm.isChecked}/>
-                I’m not a robot
-            </label> 
+            <div className={style.customCheckbox}>
+                <input type="checkbox" name="isChecked" id='robot'
+                    onChange={handleChange} checked={dataForm.isChecked}/>
+                <label htmlFor="robot" className={style.check}>I’m not a robot</label> 
+            </div>
             <button type='submit' className={style.btnSub} 
             disabled={!isFormValid}>Contsct us</button>
-            
         </form>
     )
 }

@@ -12,7 +12,7 @@ const BoxFooter = ()=>{
             <div className={style.footerBoxes}>
                 <div className={style.footerBoxes_left}>
                     <a href="info@krokam.com" className={style.mailLink}>info@krokam.com</a>
-                    <a href="https://www.youtube.com/@krokammedia7852" className={style.linkYouTube}></a>
+                    <a href="https://www.youtube.com/@krokammedia7852" title='YouTube channel'className={style.linkYouTube}></a>
                 </div>
                 <div className={style.footerBoxes_right}>
                     <ul>
