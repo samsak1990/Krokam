@@ -6,7 +6,7 @@ import {menuList} from '../BoxTopMenu/MenuList'
 
 const BoxFooter = ()=>{
     return(
-        <WrapperBox center={true}>
+        <WrapperBox center={true} classExtra={style.lessMargin}>
         <WrapperContent>
             <img src={`${process.env.PUBLIC_URL}/images/intro/logo.png`} className={style.logoMini} />
             <div className={style.footerBoxes}>
