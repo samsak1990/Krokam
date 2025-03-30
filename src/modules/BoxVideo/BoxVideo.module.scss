@@ -4,3 +4,20 @@
     height: 605px;
     border-radius: 30px;
 }
+
+@mixin positionImg{
+    position: absolute;
+    display: block;
+}
+
+.bg_figureL{
+    @include positionImg();
+    top: 0;
+    left: 0;
+}
+
+.bg_figureR{
+    @include positionImg();
+    bottom: 0;
+    right: 0;
+}

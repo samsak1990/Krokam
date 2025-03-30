@@ -6,6 +6,8 @@ import WrapperContent from "../../components/WrapperContent/WrapperContent";
 const BoxVideo = ()=>{
     return(
         <WrapperBox center={true}>
+            <img className={style.bg_figureL} src={`${process.env.PUBLIC_URL}/images/figure2.png`} alt="" />
+            <img className={style.bg_figureR} src={`${process.env.PUBLIC_URL}/images/figure3.png`} alt="" />
             <WrapperContent>
                 <iframe 
                 className={style.videoBox} 

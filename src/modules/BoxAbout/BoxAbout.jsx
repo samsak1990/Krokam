@@ -8,6 +8,7 @@ import Button from "../../views/Button/Button";
 const BoxAbout = () =>{
     return (
         <WrapperBox blueBg={true} center={true}>
+            <img className={style.bg_figure} src={`${process.env.PUBLIC_URL}/images/figure1.png`} alt="" />
             <WrapperContent >
                 <H2 color='white'>About the project</H2>
                 <div className={style.textAbout}>
